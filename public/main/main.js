@@ -1,3 +1,6 @@
+// require('dotenv').config();
+// console.log(process.env)
+
 const userInfo = document.getElementById('user');
 const userOptions = document.getElementById('profile_container');
 
@@ -39,7 +42,7 @@ document.getElementById('logout-button').addEventListener('click', () => {
         });
 });
 
-// const youtubeApiKey = 'AIzaSyDDE-in4LuSrD4b2NnKTdgm8u5GpuRfdJs';
+const youtubeApiKey = 'AIzaSyDDE-in4LuSrD4b2NnKTdgm8u5GpuRfdJs';
 
 function clearResults() {
     const wikipediaResults = document.getElementById('wikipediaResults');
@@ -241,28 +244,6 @@ const dicSearchIcon = document.querySelector('.dictionary_icon'),
 
 dicSearchIcon.addEventListener('click',()=>{
     dicSearchBlock.classList.toggle('active');
-    // if (dicSearchBlock.classList.contains('active')){
-    //     dicSearchBlock.innerHTML = `<div class="dic_input">
-    //     <input type="text" placeholder="Enter word here..." id="word-input"/>
-    //     <button class="dic_search"><ion-icon name="search"></ion-icon></button>
-    //   </div>
-    //   <div class="dic_meaning">
-    //     <div class="audio_word">
-    //       <audio src="" id="word-audio">audio</audio>
-    //       <div class="audio_icn"><ion-icon name="volume-medium-outline"></ion-icon></div>
-    //       <div class="word_class">
-    //         <h2 class="word"></h2>
-    //       </div>
-    //     </div>
-    //     <div class="phonetic_class">
-    //       <p class="phonetic"></p>
-    //     </div>
-    //     <ul class="meanings"></ul>
-    //   </div>`;
-    // }else{
-    //     dicSearchBlock.innerHTML = '';
-    // }
-    // dicSearch.focus();
 });
 dicSearch.addEventListener('click', () => {
     const wordInput = document.getElementById('word-input').value,

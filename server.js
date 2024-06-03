@@ -9,7 +9,7 @@ const fs = require('fs');
 
 
 
-const url = 'mongodb+srv://nitish:nitish9966@cluster0.tsuqmmv.mongodb.net/'; 
+const url = 'mongodb+srv://poorna:Poorna123@cluster0.h7n7gxk.mongodb.net/'; 
 const dbName = 'INCOGNITODB'; 
 
 const client = new MongoClient(url, { useUnifiedTopology: true });
