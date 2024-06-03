@@ -12,7 +12,7 @@ const fs = require('fs');
 const url = process.env.MONGO_URL; 
 const dbName = 'INCOGNITODB'; 
 
-const client = new MongoClient(url, { useUnifiedTopology: true });
+const client = new MongoClient(url);
 
 
 app.use(bodyParser.urlencoded({ extended: true }));
